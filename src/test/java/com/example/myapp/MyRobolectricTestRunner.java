@@ -29,5 +29,9 @@ public class MyRobolectricTestRunner extends RobolectricTestRunner {
     @Override public int getTargetSdkVersion() {
       return 16;
     }
+
+    @Override public String getApplicationName() {
+      return TestApp.class.getName();
+    }
   }
 }

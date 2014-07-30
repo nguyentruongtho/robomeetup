@@ -16,7 +16,7 @@ public class App extends Application {
     objectGraph = ObjectGraph.create(getModules());
   }
 
-  private Object[] getModules() {
+  protected Object[] getModules() {
     return new Object[] {
         new AppModule(this)
     };
