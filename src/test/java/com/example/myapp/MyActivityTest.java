@@ -6,13 +6,11 @@ import android.widget.TextView;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
-import org.robolectric.annotation.Config;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 
-@RunWith(RobolectricTestRunner.class)
-@Config(emulateSdk = 16)
+@RunWith(MyRobolectricTestRunner.class)
+//@Config(emulateSdk = 16)
 public class MyActivityTest {
   @Test public void clickOnButtonShouldShowCorrectMessage() {
     MyActivity myActivity = Robolectric.setupActivity(MyActivity.class);
